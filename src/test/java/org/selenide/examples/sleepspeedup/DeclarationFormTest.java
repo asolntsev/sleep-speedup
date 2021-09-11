@@ -72,7 +72,7 @@ public class DeclarationFormTest {
     $("#purchaseDocumentReference").val("arve 002");
 
     // Ironically, this sleep makes test faster
-    sleep(300);
+    // sleep(300);
 
     WebDriver webDriver = run("get webdriver", WebDriverRunner::getWebDriver);
     WebElement checkbox = run("find element", () -> webDriver.findElement(By.cssSelector("#ioss-checkbox")));
